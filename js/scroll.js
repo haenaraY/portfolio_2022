@@ -25,28 +25,45 @@ textContainers.forEach((element, index) => {
   let start = top ;
 
   let firstText = element.querySelector('.heading:first-child');
-  let secondText = element.querySelector('.heading:last-child');
+  let secondText = element.querySelector('.heading:nth-child(2)');
+  let lastText = element.querySelector('.heading:last-child');
 
   gsap.to(firstText, {
     scrollTrigger: {
       trigger: element,
-      scrub: true,
+      duration:0.8,
+      scrub: 5,
       start: start + "px bottom",
       end: "bottom top"
     },
-    x: '-54vw',
+    x: '-60vw',
     transformOrigin: "left center", 
-    ease: "none"
+   ease:'power1.inOut'
   });
-  gsap.to(secondText, {
+
+    gsap.to(secondText, {
     scrollTrigger: {
       trigger: element,
-      scrub: true,
+      duration:0.8,
+      scrub: 2,
       start: start + "px bottom",
       end: "bottom top"
     },
-    x: '32vw',
+    x: '-5vw',
     transformOrigin: "left center", 
-    ease: "none"
+   ease:'power1.inOut'
+    });
+  
+  gsap.to(lastText, {
+    scrollTrigger: {
+      trigger: element,
+      duration:0.8,
+      scrub: 3,
+      start: start + "px bottom",
+      end: "bottom top"
+    },
+    x: '50vw',
+    transformOrigin: "left center", 
+    ease:'power1.inOut'
   });
 });

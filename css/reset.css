@@ -171,78 +171,6 @@ button {
     cursor: pointer;
 }
 
-@font-face {
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: 100;
-    src: url("/css/fonts/NotoSansKR-Thin.woff") format('woff'),
-        url("/css/fonts/NotoSansKR-Thin.woff2") format('woff2');
-    unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: 200;
-    src: url("/css/fonts/NotoSansKR-Light.woff") format('woff'),
-        url("/css/fonts/NotoSansKR-Light.woff2") format('woff2');
-    unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: 300;
-    src: url("/css/fonts/NotoSansKR-DemiLight.woff") format('woff'),
-        url("/css/fonts/NotoSansKR-DemiLight.woff2") format('woff2');
-    unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: 400;
-    src: url("/css/fonts/NotoSansKR-Regular.woff") format('woff'),
-        url("/css/fonts/NotoSansKR-Regular.woff2") format('woff2');
-    unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: 500;
-    src: url("/css/fonts/NotoSansKR-Medium.woff") format('woff'),
-        url("/css/fonts/NotoSansKR-Medium.woff2") format('woff2');
-    unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: 700;
-    src: url("/css/fonts/NotoSansKR-Bold.woff") format('woff'),
-        url("/css/fonts/NotoSansKR-Bold.woff2") format('woff2');
-    unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: 900;
-    src: url("/css/fonts/NotoSansKR-Black.woff") format('woff'),
-        url("/css/fonts/NotoSansKR-Black.woff2") format('woff2');
-    unicode-range: U+AC00-D7A3;
-}
-
-/* 원 모바일 POP체 */
-@font-face {
-    font-weight: 400;
-    font-family: "ONE-MOBILE-POP";
-    font-style: normal;
-    src: url("/css/fonts/ONE-MOBILE-POP-OTF.woff") format('woff'),
-        url("/css/fonts/ONE-MOBILE-POP-OTF.woff2") format('woff2');
-
-}
 
 *,
 p,
@@ -261,7 +189,7 @@ a {
     line-height: 1.5;
     font-weight: 400;
     font-style: inherit;
-    font-family: 'Montserrat', "Noto Sans KR", sans-serif;
+    font-family: 'Poppins','ApercuMono',sans-serif;
     letter-spacing: -1px;
 }
 

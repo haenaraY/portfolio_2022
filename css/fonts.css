@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: "ApercuMono";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/css/fonts/FontsFree-Net-ApercuMono.woff") format('woff');
+    unicode-range:U+0061-007A;
+}
+
+@font-face {
+    font-weight: 100;
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("/css/fonts/Poppins-Thin.woff") format('woff');
+unicode-range:U+0041-005A;
+}
+@font-face {
+    font-weight: 300;
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("/css/fonts/Poppins-Light.woff") format('woff');
+    unicode-range:U+0041-005A;
+
+}
+@font-face {
+    font-weight: 400;
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("/css/fonts/Poppins-Regular.woff") format('woff');
+unicode-range:U+0041-005A;
+}
+@font-face {
+    font-weight: 500;
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("/css/fonts/Poppins-Medium.woff") format('woff');
+unicode-range:U+0041-005A;
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("/css/fonts/Poppins-Bold.woff") format('woff');
+unicode-range:U+0041-005A;
+}
+
+@font-face {
+    font-weight: 900;
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("/css/fonts/Poppins-Black.woff") format('woff');
+unicode-range:U+0041-005A;
+}

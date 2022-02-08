@@ -20,7 +20,6 @@ document.querySelectorAll(".nav_wrap ul li a").forEach(li => {
 })
 
 // cursor
-
 $(document).mousemove(function (e) {
     var cursorWidth = $(".cursor").width() / 3;
     gsap.to(".cursor", {
