@@ -156,11 +156,19 @@ body {
     position: fixed;
     left: 2%;
     top: 25px;
-    border-bottom: 1px solid #2e2e2e;
+    border: 1px solid #2e2e2e;
     animation: header 1.5s ease-in-out forwards;
     animation-delay: 2s;
+    transition: 0.5s ease-in-out;
 }
-
+.header.sticky {
+    top:0;
+      border:none;
+   border-bottom: 1px solid #2e2e2e;
+      -webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(10px);
+   
+}
 .logo span {
     width: 65px;
     height: 65px;
@@ -197,9 +205,12 @@ body {
 
 .nav_wrap {
     margin-right: 4vw;
+    transition: 0.5s ease-in-out;
     font-family: 'Poppins';
 }
-
+.nav_wrap.sticky{
+    margin-right: 15px;
+}
 .nav_wrap li {
     display: inline-block;
     overflow: hidden;
@@ -259,6 +270,23 @@ body {
     width: 100vw;
 
 }
+.small_txt {
+    padding-top: 20%;
+    cursor: default;
+    text-align: right;
+    padding-right: 2em;
+}
+.small_txt h6 {
+       font-family: "ApercuMono";
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #0f0f0f;
+    font-size: 9px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
 .headline_txt {
     z-index: 1;
     top: 90%;
@@ -266,7 +294,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 20%;
 }
 .headline_txt .heading {
     position: relative;

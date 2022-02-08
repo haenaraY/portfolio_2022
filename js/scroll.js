@@ -11,9 +11,22 @@ document.addEventListener('scroll', () => {
 
     progressTag.style.width = `${100 * percentage}%`;
 
+  
+  
 });
+// header sticky
+var win = $(window),
+  nav = $('.scroll_ani');
 
+    pos = 10,
+    sticky = function(){ 
+      win.scrollTop() > pos ?
+        nav.addClass('sticky')
+        : nav.removeClass('sticky');
 
+    }
+
+win.scroll(sticky)
 
 let viewHeight = window.innerHeight;
 let viewWidth = window.innerWidth;
