@@ -7,22 +7,21 @@ body {
 /* mouse cursor */
 .cursor {
     position: fixed;
-    pointer-events: none;
-    mix-blend-mode: difference;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     background: white;
-    transition: transform 350ms ease-in-out,
-    background 350ms ease-in-out;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    transition: transform 350ms ease-in-out, background 350ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
     z-index: 1000;
 }
 
 .cursor.active {
-    transform: translate(-50%, -50%) scale(3);
     background: rgba(209, 201, 188,0.5);
-    mix-blend-mode:normal;
+    transform: translate(-50%, -50%) scale(3);
+    mix-blend-mode: normal;
     filter: blur(4px);
 }
 
@@ -72,17 +71,17 @@ body {
 }
 /* loading */
 .loading_wrap {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
+    background: #235c47;
     z-index: 10000;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #235c47;
     transition: 0.5s ease-in-out;
 }
 .loading_wrap.active {
@@ -101,6 +100,9 @@ body {
     height: 8px;
     margin: 0 4px;
     background: white;
+    -webkit-animation: loadingFade 1s infinite;
+    -moz-animation: loadingFade 1s infinite;
+    animation: loadingFade 1s infinite;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -110,9 +112,6 @@ body {
     -ms-box-shadow: 0 0 2px black;
     -o-box-shadow: 0 0 2px black;
     box-shadow: 0 0 2px black;
-    -webkit-animation: loadingFade 1s infinite;
-    -moz-animation: loadingFade 1s infinite;
-    animation: loadingFade 1s infinite;
 }
 
 .loading_dot:nth-child(1) {
@@ -139,56 +138,59 @@ body {
     animation-delay: 0.3s;
 }
 .loading_wrap span {
+    color: #fff;
     font-size: 20px;
     line-height: 2;
-    color: #fff;
 }
 
 /* header */
 .header {
+    display: flex;
+    position: fixed;
+    top: 25px;
+    left: 2%;
     width: 96%;
     height: 90px;
-    z-index: 1000;
-    opacity: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    left: 2%;
-    top: 25px;
     border: 1px solid #2e2e2e;
     animation: header 1.5s ease-in-out forwards;
+    z-index: 1000;
+    opacity: 0;
+    justify-content: space-between;
+    align-items: center;
     animation-delay: 2s;
     transition: 0.5s ease-in-out;
 }
 .header.sticky {
-    top:0;
-      border:none;
-   border-bottom: 1px solid #2e2e2e;
-      -webkit-backdrop-filter: blur(2px);
-   backdrop-filter: blur(10px);
-   
+    top: 0;
+    width: 100%;
+    border: none;
+    background: rgba(209, 201, 188, 0.1);
+    border-bottom: 1px solid #2e2e2e;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
+    left: 0;
+
 }
 .logo span {
+    display: inline-block;
     width: 65px;
     height: 65px;
     padding: 7px;
     margin: 12px;
-    display: inline-block;
+    font-weight: 500;
     font-size: 30px;
     line-height: 1.4;
-    font-weight: 500;
     text-align: center;
+    animation: logo 2s forwards;
 
     opacity: 0;
-    animation: logo 2s forwards;
     animation-delay: 4.2s;
     text-transform: uppercase;
 }
 
 .header.active .logo span {
-    color: #000;
     border: 5px solid #000;
+    color: #000;
 }
 
 .header.active .nav li a {
@@ -204,17 +206,17 @@ body {
 }
 
 .nav_wrap {
+    font-family: 'Poppins';
     margin-right: 4vw;
     transition: 0.5s ease-in-out;
-    font-family: 'Poppins';
 }
-.nav_wrap.sticky{
+.nav_wrap.sticky {
     margin-right: 15px;
 }
 .nav_wrap li {
     display: inline-block;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .nav_wrap li+li {
@@ -222,25 +224,25 @@ body {
 }
 
 .nav_wrap li a {
-    font-size: 17px;
     font-weight: 400;
+    font-size: 17px;
     text-transform: capitalize;
 }
 
 .nav_wrap li a span {
-    position: relative;
     display: block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
+    position: relative;
     color: #2d2d2d;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
 }
 
 .nav_wrap li a::after {
-    position: absolute;
-    left: 0;
-    bottom: -5px;
     display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
     width: 100%;
     height: 5px;
     content: '';
@@ -266,50 +268,50 @@ body {
 /* section1 */
 #section1 {
     position: relative;
-    background: #fefefe;
     width: 100vw;
+    background: #fefefe;
 
 }
 .small_txt {
+    text-align: right;
     padding-top: 20%;
     cursor: default;
-    text-align: right;
     padding-right: 2em;
 }
 .small_txt h6 {
-       font-family: "ApercuMono";
-    margin-top: 10px;
-    margin-bottom: 10px;
     color: #0f0f0f;
+    font-weight: 600;
     font-size: 9px;
     line-height: 20px;
-    font-weight: 600;
+    font-family: "ApercuMono";
     letter-spacing: 2.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 .headline_txt {
-    z-index: 1;
+    display: flex;
     top: 90%;
     left: 0;
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    z-index: 1;
+    flex-direction: column;
 }
 .headline_txt .heading {
     position: relative;
+    margin: 0;
+    color: #0f0f0f;
+    font-weight: 700;
     font-size: 10vw;
     line-height: 2px;
-    font-weight: 700;
-    text-transform: uppercase;
     white-space: nowrap;
-    color: #0f0f0f;
-    margin: 0;
+    text-transform: uppercase;
 
 }
 .headline_txt .heading span {
+    color: #d1c9bc;
     font-weight: 700;
     line-height: 1;
-    color: #d1c9bc;
 }
 
 .headline_txt .heading:last-child {
@@ -317,28 +319,28 @@ body {
 }
 /* section2 */
 #section2 {
-    background: #eee;
     width: 100vw;
     height: 100vh;
+    background: #eee;
 }
 
 /* section3 */
 #section3 {
-    background: #888;
     width: 100vw;
     height: 100vh;
+    background: #888;
 }
 
 /* section4 */
 #section4 {
-    background: #555;
     width: 100vw;
     height: 100vh;
+    background: #555;
 }
 
 /* footer */
 #footer {
-    background: #ccc;
     width: 100vw;
     height: 100vh;
+    background: #ccc;
 }
