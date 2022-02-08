@@ -18,5 +18,28 @@ document.querySelectorAll(".nav_wrap ul li a").forEach(li => {
         })
     })
 })
+
+// cursor
+
+$(document).mousemove(function (e) {
+    var cursorWidth = $(".cursor").width() / 3;
+    gsap.to(".cursor", {
+        duration: 0.5,
+        delay:0.1,
+        left: e.pageX - cursorWidth,
+        top: e.pageY - cursorWidth,
+        ease: "power1.out"
+    });
+});
+
+//마우스 오버효과
+$(".hoverEffect").hover(function () {
+    $(".cursor").addClass("active");
+
+}, function () {
+    $(".cursor").removeClass("active");
+
+});
+
                  
 
