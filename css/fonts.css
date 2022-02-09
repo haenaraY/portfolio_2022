@@ -1,12 +1,22 @@
 
+/* 한글  */
+@font-face {
+    font-family: 'InfinitySans_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 영문 소문자 */
 @font-face {
     font-family: "ApercuMono";
     font-style: normal;
     font-weight: 900;
     src: url("/css/fonts/FontsFree-Net-ApercuMono.woff") format('woff');
-    unicode-range:U+0061-007A;
+    unicode-range: U+0061-007A;
 }
 
+/* 영문 문자 */
 @font-face {
     font-weight: 100;
     font-family: "Poppins";

@@ -80,3 +80,19 @@ textContainers.forEach((element, index) => {
     ease:'power1.inOut'
   });
 });
+
+// 패럴럭스
+$(window).scroll(function () {
+    var top = $(window).scrollTop();
+    var scrollTop = $(window).scrollTop() + $(window).height() / 1.4;
+    for (var i = 1; i <= 30; i++) {
+        if (scrollTop > $(".parallax_item" + i).offset().top) {
+            $(".parallax_item" + i).addClass("show");
+        } else {
+            $(".parallax_item" + i).removeClass("show");
+        }
+    }
+    // if (top > 0) {     $(".icon-scroll").addClass('hide'); } else {
+    // $(".icon-scroll").removeClass('hide'); }
+
+});

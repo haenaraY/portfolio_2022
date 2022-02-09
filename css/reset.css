@@ -91,6 +91,25 @@ video {
     box-sizing: border-box;
     word-break: keep-all;
 }
+/* skip */
+#skip a {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+#skip a:active,
+#skip a:focus {
+    top: 0
+}
 
 /* html5shiv */
 article,
@@ -182,7 +201,10 @@ textarea {
     line-height: 1.5;
     font-weight: 400;
     font-style: inherit;
-    font-family: "NOTOSANSKR", "SpoqaHan", '맑은 고딕', 'Malgun Gothic', sans-serif;
+    font-family: "InfinitySans_Regular",
+    "ApercuMono",
+    "Poppins",
+    sans-serif;
     letter-spacing: -0.05em;
 }
 

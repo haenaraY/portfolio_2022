@@ -319,24 +319,67 @@ body {
     line-height: 2px;
     white-space: nowrap;
     text-transform: uppercase;
+    font-family: "Poppins";
 
 }
 .headline_txt .heading span {
     color: #d1c9bc;
     font-weight: 700;
     line-height: 1;
+    font-family: "Poppins";
 }
 
 .headline_txt .heading:last-child {
     align-self: flex-end;
 }
 /* section2 */
+section {
+    padding:100px 0;
+}
 #section2 {
     width: 100%;
  
 }
 .sec2 .small_txt {
     text-align: center;
+    padding-top: 10%;
+}
+.sec2 .about_wrap {
+    margin-top: 6%;
+}
+.sec2 .about_wrap .inner {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.sec2 .about_wrap .img {
+    width: 20%;
+    height: 300px;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s cubic-bezier(0, 0.68, 0.22, 0.99);
+    overflow: hidden;
+}
+.sec2 .about_wrap .img img {
+    height: 100%;
+    object-fit: cover;
+}
+.sec2 .about_wrap .text {
+    width: 60%;
+ opacity: 0;
+ transform: translateY(150px);
+ transition: all 2s 0.5s cubic-bezier(0, 0.68, 0.22, 0.99);
+ overflow: hidden;
+}
+
+.sec2 .about_wrap .text p {
+    font-size: 2.38em;
+}
+
+.sec2 .parallax_item1.show .img,
+.sec2 .parallax_item1.show .text {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* section3 */
