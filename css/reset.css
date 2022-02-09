@@ -90,7 +90,6 @@ video {
     vertical-align: baseline;
     box-sizing: border-box;
     word-break: keep-all;
-    -webkit-tap-highlight-color: transparent;
 }
 
 /* html5shiv */
@@ -108,32 +107,13 @@ section,
 summary {
     display: block;
 }
-/* skip */
-#skip a {
-    width: 100%;
-    height: 30px;
-    overflow: hidden;
-    font-size: 16px;
-    line-height: 30px;
-    color: #fff;
-    text-align: center;
-    background-color: #000;
-    position: absolute;
-    left: 0;
-    top: -40px;
-}
 
-#skip a:active,
-#skip a:focus {
-    top: 0
-}
-
+/* img */
 img {
     width: 100%;
-    height: 100%;
     vertical-align: middle;
-
 }
+
 
 /* 단어 줄바꿈 */
 p,
@@ -143,9 +123,8 @@ span {
 
 /* a 링크 초기화 */
 a {
-    -webkit-tap-highlight-color: transparent;
     display: inline-block;
-    color: #0f0f0f;
+    color: #2d2d2d;
     text-decoration: none;
 }
 
@@ -163,6 +142,20 @@ ul {
     list-style: none;
 }
 
+/* 사파리 혹은 타 브라우저에서 태그 radius현상 없에기 */
+input,
+textarea,
+button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    outline: 0;
+    border: 0;
+}
+
 /*버튼 초기화*/
 button {
     padding: 0;
@@ -171,43 +164,35 @@ button {
     cursor: pointer;
 }
 
-
+/* 폰트 기본세팅 */
 *,
-p,
+a,
 address,
 body,
 button,
 em,
 input,
 input::placeholder,
+p,
 select,
 table,
-textarea,
-a {
-    color: #0f0f0f;
-    font-size: 14px;
+textarea {
+    color: #202020;
+    font-size: 17px;
     line-height: 1.5;
     font-weight: 400;
     font-style: inherit;
-    font-family: 'Poppins','ApercuMono',sans-serif;
-    letter-spacing: -1px;
+    font-family: "NOTOSANSKR", "SpoqaHan", '맑은 고딕', 'Malgun Gothic', sans-serif;
+    letter-spacing: -0.05em;
 }
 
 
-select {
-    background: #fff;
-}
-
+/* textarea 초기화 */
 textarea {
     resize: none;
 }
 
-/* 블릿기호 초기화 */
-ol,
-ul {
-    list-style: none;
-}
-
+/* 인용문 기호 초기화 */
 blockquote,
 q {
     quotes: none;
@@ -238,17 +223,18 @@ fieldset {
     border: 0;
 }
 
-/*IR효과*/
-.ir {
-    position: absolute;
+/* 웹접근성을 고려한 블라인드 처리 */
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
-    border: 0;
-    white-space: nowrap;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
 }
 
 /* clearfix */
@@ -258,7 +244,22 @@ fieldset {
     content: '';
 }
 
-.btn_margin {
+/* 아이폰에서 테이블 width 간격이 모두 같을 때 */
+caption {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 0;
     font-size: 0;
     line-height: 0;
+}
+
+/* font color */
+:root {
+    --black-color: #303030;
+    --white-color: #ffffff;
+    --gray-color: #eeeeee;
+    --red-color: #e61930;
+    --main-color: #4faef0;
+    --box-color: #f2f9ff;
 }
