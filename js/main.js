@@ -118,16 +118,17 @@ $(window).scroll(function () {
         $(".icon-scroll").removeClass('hide');
     }
 
-    // header sticky
-    var win = $(window),
-        nav = $('.scroll_ani');
-
-    pos = 10,
-    sticky = function () {
-        win.scrollTop() > pos
-            ? nav.addClass('sticky')
-            : nav.removeClass('sticky');
-
-    }
-
 });
+
+// header sticky
+var win = $(window),
+    nav = $('.scroll_ani');
+
+pos = 10,
+sticky = function () {
+    win.scrollTop() > pos
+        ? nav.addClass('sticky')
+        : nav.removeClass('sticky');
+}
+win.scroll(sticky)
+
