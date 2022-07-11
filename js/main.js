@@ -27,6 +27,21 @@ $(".hoverEffect").hover(function () {
 
 });
 
+// header sticky
+var win = $(window),
+  nav = $('.scroll_ani');
+
+    pos = 10,
+    sticky = function(){ 
+      win.scrollTop() > pos ?
+        nav.addClass('sticky')
+        : nav.removeClass('sticky');
+
+    }
+
+win.scroll(sticky);
+
+
 
 // progress
 const progressTag = document.querySelector('.progress');
@@ -116,18 +131,4 @@ $(window).scroll(function () {
     }
 
 });
-
-// header sticky
-var win = $(window),
-  nav = $('.scroll_ani');
-
-    pos = 10,
-    sticky = function(){ 
-      win.scrollTop() > pos ?
-        nav.addClass('sticky')
-        : nav.removeClass('sticky');
-
-    }
-
-win.scroll(sticky)
 
