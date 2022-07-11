@@ -1,6 +1,14 @@
 @charset "utf-8";
 
 /* reset */
+html,body {
+   font-size: 15px;
+       font-family: "InfinitySans_Regular",
+    "ApercuMono",
+    "Poppins",
+    sans-serif;
+    letter-spacing: -0.05em;
+}
 /* 여백 초기화 */
 a,
 abbr,
@@ -86,7 +94,7 @@ video {
     padding: 0;
     margin: 0;
     border: 0;
-    font-size: 100%;
+
     vertical-align: baseline;
     box-sizing: border-box;
     word-break: keep-all;
@@ -197,15 +205,10 @@ select,
 table,
 textarea {
     color: #202020;
-    font-size: 17px;
     line-height: 1.5;
     font-weight: 400;
     font-style: inherit;
-    font-family: "InfinitySans_Regular",
-    "ApercuMono",
-    "Poppins",
-    sans-serif;
-    letter-spacing: -0.05em;
+  
 }
 
 
@@ -278,10 +281,11 @@ caption {
 
 /* font color */
 :root {
-    --black-color: #303030;
+    --black-color: #1C1A1A;
+    --sub-color:#FFFBEF;
     --white-color: #ffffff;
     --gray-color: #eeeeee;
-    --red-color: #e61930;
-    --main-color: #4faef0;
     --box-color: #f2f9ff;
+   --text-color :#d1c9bc;
 }
+

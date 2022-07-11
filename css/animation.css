@@ -1,44 +1,16 @@
 /* loading */
-
-@-webkit-keyframes loadingFade {
+@keyframes coverleft {
     0% {
-        opacity: 0;
+        transform: scaleX(1) skewX(30deg);
+        transform-origin: left;
+    
     }
-
-    50% {
-        opacity: 0.8;
-    }
+     
 
     100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes loadingFade {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes loadingFade {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 0;
+        transform: scaleX(0) skewX(30deg);
+        transform-origin: left;
+        background:var(--text-color);
     }
 }
 

@@ -1,3 +1,10 @@
+//resize
+let vh = window.innerHeight * 0.01
+document.documentElement.style.setProperty('--vh', `${vh}px`)
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+})
 //loading
 let Isloader = document.querySelector('.loading_wrap');
 
@@ -21,13 +28,13 @@ document.querySelectorAll(".nav_wrap ul li a").forEach(li => {
 
 // cursor
 $(document).mousemove(function (e) {
-    var cursorWidth = $(".cursor").width() / 3;
+    var cursorWidth = $(".cursor").width() / 2;
     gsap.to(".cursor", {
         duration: 0.5,
-        delay:0.1,
-        left: e.pageX - cursorWidth,
+        delay: 0.05,
+        left: e.pageX - cursorWidth - 17,
         top: e.pageY - cursorWidth,
-        ease: "power1.out"
+        ease: "Power4.easeOut"
     });
 });
 
@@ -41,4 +48,12 @@ $(".hoverEffect").hover(function () {
 });
 
                  
+
+
+ setTimeout(function () {
+
+    document.getElementById("cover").classList.add("cover-left");
+
+});
+
 
