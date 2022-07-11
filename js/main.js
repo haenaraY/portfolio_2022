@@ -1,4 +1,3 @@
-
 //cover
 setTimeout(function () {
 
@@ -7,7 +6,6 @@ setTimeout(function () {
         .classList
         .add("cover-left");
 });
-
 
 // cursor
 $(document).mousemove(function (e) {
@@ -24,11 +22,10 @@ $(document).mousemove(function (e) {
 //mouse pointer hover effect
 $(".hoverEffect").hover(function () {
     $(".cursor").addClass("active");
-
 }, function () {
     $(".cursor").removeClass("active");
-
 });
+
 // progress
 const progressTag = document.querySelector('.progress');
 const progressText = document.querySelector('p');
@@ -45,8 +42,6 @@ document.addEventListener('scroll', () => {
     progressTag.style.width = `${ 100 * percentage}%`;
 
 });
-
-
 
 // gsap text
 win.scroll(sticky)
@@ -123,16 +118,16 @@ $(window).scroll(function () {
         $(".icon-scroll").removeClass('hide');
     }
 
-// header sticky
-var win = $(window),
-    nav = $('.scroll_ani');
+    // header sticky
+    var win = $(window),
+        nav = $('.scroll_ani');
 
-pos = 10,
-sticky = function () {
-    win.scrollTop() > pos
-        ? nav.addClass('sticky')
-        : nav.removeClass('sticky');
+    pos = 10,
+    sticky = function () {
+        win.scrollTop() > pos
+            ? nav.addClass('sticky')
+            : nav.removeClass('sticky');
 
-}
+    }
 
 });
