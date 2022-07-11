@@ -507,31 +507,31 @@ section {
 }
 
 .project_wrap > ul > li.trust {
-    background-image: url("/img/main/trusty.png");
+    background-image: url("../img/main/trusty.png");
 }
 .project_wrap > ul > li.doctor {
-    background-image: url("/img/main/doctormoa.png");
+    background-image: url("../img/main/doctormoa.png");
 }
 .project_wrap > ul > li.yyhb {
-    background-image: url("/img/main/yy.png");
+    background-image: url("../img/main/yy.png");
 }
 .project_wrap > ul > li.zerocool_01 {
-    background-image: url("/img/main/zerocool_01.png");
+    background-image: url("../img/main/zerocool_01.png");
 }
 .project_wrap > ul > li.zerocool_02 {
-    background-image: url("/img/main/zerocool_02.png");
+    background-image: url("..img/main/zerocool_02.png");
 }
 .project_wrap > ul > li.zerocool_03 {
-    background-image: url("/img/main/zerocool_03.png");
+    background-image: url("../img/main/zerocool_03.png");
 }
 .project_wrap > ul > li.bk {
-    background-image: url("/img/main/bk.png");
+    background-image: url("../img/main/bk.png");
 }
 .project_wrap > ul > li.resom {
-    background-image: url("/img/main/resom.png");
+    background-image: url("../img/main/resom.png");
 }
 .project_wrap > ul > li.reeds {
-    background-image: url("/img/main/reeds.png");
+    background-image: url("../img/main/reeds.png");
 }
 
 /* section5 */
