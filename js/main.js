@@ -1,11 +1,3 @@
-//cover
-setTimeout(function () {
-
-    document
-        .getElementById("cover")
-        .classList
-        .add("cover-left");
-});
 
 // cursor
 $(document).mousemove(function (e) {
@@ -19,12 +11,22 @@ $(document).mousemove(function (e) {
     });
 });
 
-//mouse pointer hover effect
+//mouse hover effect
 $(".hoverEffect").hover(function () {
     $(".cursor").addClass("active");
+
 }, function () {
     $(".cursor").removeClass("active");
+
 });
+
+//cover
+ setTimeout(function () {
+
+    document.getElementById("cover").classList.add("cover-left");
+
+});
+
 
 // progress
 const progressTag = document.querySelector('.progress');
@@ -44,9 +46,6 @@ document.addEventListener('scroll', () => {
 });
 
 // gsap text
-let viewHeight = window.innerHeight;
-let viewWidth = window.innerWidth;
-
 let textContainers = document.querySelectorAll('.headline_txt');
 
 textContainers.forEach((element, index) => {
@@ -120,13 +119,15 @@ $(window).scroll(function () {
 
 // header sticky
 var win = $(window),
-    nav = $('.scroll_ani');
+  nav = $('.scroll_ani');
 
-pos = 10,
-sticky = function () {
-    win.scrollTop() > pos
-        ? nav.addClass('sticky')
+    pos = 10,
+    sticky = function(){ 
+      win.scrollTop() > pos ?
+        nav.addClass('sticky')
         : nav.removeClass('sticky');
-}
+
+    }
+
 win.scroll(sticky)
 
