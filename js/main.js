@@ -44,8 +44,6 @@ document.addEventListener('scroll', () => {
 });
 
 // gsap text
-win.scroll(sticky)
-
 let viewHeight = window.innerHeight;
 let viewWidth = window.innerWidth;
 
