@@ -45,17 +45,8 @@ document.addEventListener('scroll', () => {
     progressTag.style.width = `${ 100 * percentage}%`;
 
 });
-// header sticky
-var win = $(window),
-    nav = $('.scroll_ani');
 
-pos = 10,
-sticky = function () {
-    win.scrollTop() > pos
-        ? nav.addClass('sticky')
-        : nav.removeClass('sticky');
 
-}
 
 // gsap text
 win.scroll(sticky)
@@ -131,5 +122,17 @@ $(window).scroll(function () {
     } else {
         $(".icon-scroll").removeClass('hide');
     }
+
+// header sticky
+var win = $(window),
+    nav = $('.scroll_ani');
+
+pos = 10,
+sticky = function () {
+    win.scrollTop() > pos
+        ? nav.addClass('sticky')
+        : nav.removeClass('sticky');
+
+}
 
 });
