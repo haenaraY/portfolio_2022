@@ -20,23 +20,23 @@
 
 /* page transition */
 .cover_1 {
-    background: var(--black-color);
-    z-index: 9999999;
     position: fixed;
     top: 0;
     left: -25%;
     width: 150%;
     height: 100%;
+    background: var(--black-color);
+    z-index: 9999999;
     transform-origin: left;
 }
 .cover_2 {
-    background: var(--black-color);
-    z-index: 9999999;
     position: fixed;
     top: 0;
     right: -25%;
     width: 150%;
     height: 100%;
+    background: var(--black-color);
+    z-index: 9999999;
     transform-origin: left;
 }
 
@@ -133,25 +133,22 @@
 }
 .header.sticky {
     top: 0;
+    left: 0;
     width: 100%;
     border: none;
     background: rgba(209, 201, 188, 0.35);
     border-bottom: 1px solid #2e2e2e;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    left: 0;
-
 }
+
 .logo span {
     display: inline-block;
-    width: 65px;
-    height: 65px;
-    padding: 7px;
-    margin: 12px;
     font-weight: 500;
     font-size: 30px;
     line-height: 1.4;
     text-align: center;
+    margin-left:15px;
 
     text-transform: uppercase;
 }
@@ -188,21 +185,18 @@
 .nav_wrap li {
     display: inline-block;
     position: relative;
+    padding:0 1px;
     overflow: hidden;
 }
 
 .nav_wrap li+li {
-    margin-left: 3vw;
+    margin-left: 5rem;
 }
 
-.nav_wrap li a {
-    font-weight: 400;
-    font-size: 17px;
-    text-transform: capitalize;
-}
 
 .nav_wrap li a span {
     position: relative;
+    text-transform: capitalize;
     color: var(--black-color);
     font-weight: 400;
     font-size: 14px;
@@ -263,8 +257,8 @@
 
 }
 .sec1 .small_txt {
-    padding-top: 15rem;
     text-align: right;
+    padding-top: 15rem;
 
 }
 .headline_txt {
@@ -282,9 +276,9 @@
     font-weight: 700;
     font-size: 17rem;
     line-height: 2px;
+    font-family: "Poppins";
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: "Poppins";
 
 }
 .headline_txt .heading span {
@@ -304,8 +298,8 @@ section {
     background: #fefefe;
 }
 .w1000 {
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .sec2 .small_txt {
@@ -363,8 +357,8 @@ section {
     margin-top: 6%;
 }
 .work_wrap > li {
-    border-top: 2px solid var(--sub-color);
     padding: 2rem 0;
+    border-top: 2px solid var(--sub-color);
 
 }
 .work_wrap > li:last-child {
@@ -375,26 +369,26 @@ section {
     font-size: 1.2rem;
 }
 .work_wrap > li .work_sub {
-    font-size: 0.8em;
     font-weight: 300;
+    font-size: 0.8em;
 }
 .work_wrap > li .work_text {
+    display: inline-block;
+    font-size: 1.2rem;
     padding-top: 20px;
     padding-bottom: 20px;
-    display: inline-block;
-    font-size: 1.2rem;
 }
 .work_wrap > li .work_date {
-    margin-bottom: 10px;
     display: inline-block;
     width: 100%;
-    opacity: 0.6;
     font-size: 1.1rem;
+    margin-bottom: 10px;
+    opacity: 0.6;
 }
 .work_wrap > li .work_list > li {
+    font-size: 1.2rem;
     margin-bottom: 10px;
     text-indent: 5px;
-    font-size: 1.2rem;
 }
 /* section4 */
 
@@ -428,22 +422,22 @@ section {
 }
 .project_wrap > ul > li > a {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
 
 }
 .project_wrap > ul > li > a:after {
+    display: block;
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: block;
-    content: '';
     background: rgba(28, 26, 26, .5);
+    content: '';
     z-index: 1;
 }
 
@@ -460,31 +454,31 @@ section {
     transform: translate3d(0, 10px, 0);
 }
 .project_wrap > ul > li > a > p {
+    display: flex;
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 1em 1.5em;
     width: 100%;
+    padding: 1em 1.5em;
     z-index: 10;
-    display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 .project_wrap > ul > li > a > p > span {
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
     color: #fff;
     font-size: 1.5rem;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
 }
 .project_wrap > ul > li > a > p > i {
+    color: #fff;
+    font-family: "Poppins";
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     -webkit-transform: translate3d(0, -30px, 0);
     transition: opacity 0.35s, transform 0.35s;
-    color: #fff;
     transform: translate3d(0, -30px, 0);
     text-transform: uppercase;
-    font-family: "Poppins";
 }
 .project_wrap > ul > li > a {
     -webkit-transition: 0.3s ease;
@@ -547,18 +541,18 @@ section {
 
 }
 .sec5 .tit h4 {
-    font-weight: 700;
-    font-size: 10vw;
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-family: "Poppins";
+    display: block;
     position: relative;
-    left: 0;
     top: -6px;
     right: 0;
     bottom: 0;
-    display: block;
+    left: 0;
     width: 60%;
+    font-weight: 700;
+    font-size: 10vw;
+    font-family: "Poppins";
+    white-space: nowrap;
+    text-transform: uppercase;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -572,8 +566,8 @@ section {
     color: var(--text-color);
 }
 .sec5 .tit .small_txt {
-    padding-top: 0;
     width: 40%;
+    padding-top: 0;
     padding-right: 0;
 
 }
@@ -581,9 +575,9 @@ section {
     text-align: right;
 }
 .sec5 .info {
+    display: block;
     position: relative;
     bottom: 20%;
-    display: block;
     width: 50%;
     height: auto;
     margin-top: 0;
@@ -599,8 +593,8 @@ section {
     margin-bottom: 4rem;
 }
 .sec5 .info > li > p {
-    font-size: 1.7rem;
     font-weight: 200;
+    font-size: 1.7rem;
 }
 .sec5 .info > li > a {
     position: relative;
@@ -651,20 +645,20 @@ section {
 }
 .pf_info .list p {
     position: relative;
-    padding-left: 15px;
-    margin-top: 10px;
     font-size: 17px;
+    padding-left: 15px;
+    margin-top: 15px;
 }
 .pf_info .list p:before {
-    position: absolute;
     display: inline-block;
-    left: 0;
+    position: absolute;
     top: 9px;
+    left: 0;
     width: 7px;
     height: 7px;
-    border-radius: 50%;
     background: var(--text-color);
     content: '';
+    border-radius: 50%;
 }
 .pf_info .list .link_btn a {
     position: relative;
@@ -703,22 +697,22 @@ section {
     margin-bottom: 40px;
 }
 .back_btn {
-    margin-top: 40px;
     text-align: center;
+    margin-top: 40px;
 }
 .back_btn a {
     padding: 20px 54px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
     background-color: var(--black-color);
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 400;
     text-transform: uppercase;
 }
 .back_btn a:hover {
-    color: var(--black-color);
     background: var(--text-color);
+    color: var(--black-color);
 }
 
 /* mediaquery */
@@ -729,8 +723,8 @@ section {
         font-size: 14px;
     }
     #cover {
-        width: 300%;
         left: -50%;
+        width: 300%;
     }
     .sec5 {
         padding-bottom: 200px;
@@ -762,8 +756,8 @@ section {
         text-align: center;
     }
     .sec2 .about_wrap .text span {
-        text-align: center;
         display: block;
+        text-align: center;
     }
     .project_wrap > ul > li {
         width: 100%;
@@ -791,13 +785,13 @@ section {
         font-size: 12px;
     }
     #cover {
-        width: 250%;
         left: -80%;
+        width: 250%;
     }
 
     .header {
-        height: 65px;
         top: 10px;
+        height: 65px;
     }
     .nav_wrap li+li {
         margin-left: 1rem;
@@ -811,8 +805,8 @@ section {
         padding: 3rem 0;
     }
     .small_txt {
-        padding-top: 0rem;
-        padding-bottom:2rem
+        padding-top: 0;
+        padding-bottom: 2rem;
     }
     .headline_txt .heading {
         font-size: 6.5rem;
@@ -855,5 +849,14 @@ section {
 @media (max-width:380px) {
     html {
         font-size: 10px;
+    }
+    .logo span {
+        margin-left:5px;
+    }
+    .nav_wrap {
+        margin-right: 5px;
+    }
+    .nav_wrap li a span {
+        font-size: 12px;
     }
 }
