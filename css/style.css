@@ -144,7 +144,7 @@
 
 .logo span {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 35px;
     line-height: 1.4;
     text-align: center;
@@ -196,7 +196,8 @@
 .nav_wrap li a span {
     position: relative;
     color: var(--black-color);
-    font-weight: 600;
+      font-family: "Poppins";
+    font-weight: 500;
     font-size: 17px;
     line-height: 1;
     text-transform: capitalize;
