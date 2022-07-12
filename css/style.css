@@ -199,7 +199,7 @@
     text-transform: capitalize;
     color: var(--black-color);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1;
 }
 
@@ -795,6 +795,9 @@ section {
     }
     .nav_wrap li+li {
         margin-left: 1rem;
+    }
+    .nav_wrap li a span {
+        font-size: 14px;
     }
     .logo span {
         height: auto;
