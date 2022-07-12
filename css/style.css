@@ -794,6 +794,7 @@ section {
         width: 250%;
         left: -80%;
     }
+    
     .header {
         height: 65px;
     }
@@ -808,8 +809,14 @@ section {
     section {
         padding: 5rem 0;
     }
+    .small_txt {
+        padding-top: 7rem;
+    }
     .headline_txt .heading {
-        font-size: 5rem;
+        font-size: 7rem;
+    }
+    .sec1 .small_txt {
+        padding-top: 8rem;
     }
     .sec2 .about_wrap .img {
         width: 150px;
