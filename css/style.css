@@ -300,7 +300,7 @@
 /* section2 */
 section {
     position: relative;
-    padding:5rem 0;
+    padding: 5rem 0;
     background: #fefefe;
 }
 .w1000 {
@@ -694,7 +694,7 @@ section {
     flex-wrap: wrap;
 }
 .pf_info .view .img .mo {
-    display:none;
+    display: none;
 }
 .pf_info .view .img img {
     display: inline-block;
@@ -794,7 +794,7 @@ section {
         width: 250%;
         left: -80%;
     }
-    
+
     .header {
         height: 65px;
         top: 10px;
@@ -808,16 +808,20 @@ section {
         font-size: 25px;
     }
     section {
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
     .small_txt {
-        padding-top: 7rem;
+        padding-top: 0rem;
+        padding-bottom:2rem
     }
     .headline_txt .heading {
         font-size: 6.5rem;
     }
     .sec1 .small_txt {
         padding-top: 8rem;
+    }
+    .sec2 .small_txt {
+        padding-top: 0;
     }
     .sec2 .about_wrap .img {
         width: 150px;
@@ -835,13 +839,16 @@ section {
     .pf_info .view .img .pc {
         display: none;
     }
-        .pf_info .view .img .mo {
-            display: block;
-        }
-        .pf_info .view .img img {
-            width: 46%;
-            box-shadow: 1px 3px 6px rgb(0 0 0 / 30%);
-        }
+    .pf_info .view .img .mo {
+        display: block;
+    }
+    .pf_info .view .img img {
+        width: 46%;
+        box-shadow: 1px 3px 6px rgb(0 0 0 / 30%);
+    }
+    .pf_info .list p {
+        font-size: 14px;
+    }
 
 }
 
