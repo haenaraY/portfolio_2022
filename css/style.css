@@ -148,7 +148,7 @@
     font-size: 35px;
     line-height: 1.4;
     text-align: center;
-    margin-left:15px;
+    margin-left: 15px;
 
     text-transform: uppercase;
 }
@@ -185,14 +185,13 @@
 .nav_wrap li {
     display: inline-block;
     position: relative;
-    padding:0 1px;
+    padding: 0 1px;
     overflow: hidden;
 }
 
 .nav_wrap li+li {
     margin-left: 5rem;
 }
-
 
 .nav_wrap li a span {
     position: relative;
@@ -793,6 +792,9 @@ section {
         top: 10px;
         height: 65px;
     }
+    .nav_wrap {
+        margin-top: 5px;
+    }
     .nav_wrap li+li {
         margin-left: 1rem;
     }
@@ -846,15 +848,16 @@ section {
     .pf_info .list p {
         font-size: 14px;
     }
-
 }
-
 @media (max-width:380px) {
     html {
         font-size: 10px;
     }
+    .header {
+        height: 55px;
+    }
     .logo span {
-        margin-left:5px;
+        margin-left: 5px;
     }
     .nav_wrap {
         margin-right: 5px;
